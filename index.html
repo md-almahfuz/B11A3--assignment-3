@@ -1,3 +1,12 @@
+
+<!-- 
+File Name: index.html
+Author: Mohammad Al Mahfuz
+Email: almahfuz@gmail.com
+Date: 22/01/2025
+version: 1.3
+Description: Sohoj Solor Simple Homepage for Nature's Platter -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +32,13 @@
             font-family: "Sora", serif;
             font-optical-sizing: auto;
             font-weight: 400;
-            font-style: normal;}
+            font-style: normal;
+          }
+
+          .popular-card{
+            background: linear-gradient(#79ee4b, #b9e7ae)
+          }
+            
     </style>
     <title>Nature's Platter</title>
 </head>
@@ -103,9 +118,13 @@
                       <li><a>Services</a></li>
                       <li><a>Contact Us</a></li>
                     </ul>
-                </div>
-                
+                </div> 
               </div>
+              <div cless="top-marquee quicksand-normal ">
+                <marquee width="80%" direction="left" behavior="scroll" scrollamount="4">
+                    Free Delivery for members for order more than $50. Huge sale for fresh winter fruits and vegitables ✨ 24/7 Deliver avilable to big order and restaurent order. 🚀 Keep Exploring for More fresh and healthy choices!
+                </marquee>
+            </div> 
          </nav>
          <!-- Hero Section/Header  -->
 
@@ -144,7 +163,7 @@
             </figure>
             <div class="card-body items-center text-center ">
               <h2 class="card-title">24/7 Services </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <p>24/7 Delivery Service when you order more than $49. Member diccount and restaurent discount also available.</p>
             </div>
           </div>
   
@@ -157,7 +176,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Fast Delivery </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <p>Fast delivery with 30km. Fast delivery also available for members and restaurents</p>
             </div>
           </div>
   
@@ -170,33 +189,72 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Healthy Products </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <p>Our fruits and vesitables come from best and award winning farms of the country. No harmful chemical used to pesticide or preserve. </p>
             </div>
           </div>
 
         </div>
       </div>
 
-
-       <!-- Popular Product Section -->
-        <div class="bg-orange-100 py-20 px-10">
-          <h3 class="text-4xl text-green-700 py-10">Popular Products</h3>
-          <div class="flex flex-col md:flex-row gap-3">
-            <!-- Big Card -->
-          <div class="card bg-green-100 w-96 shadow-xl">
-            <div class="card-body items-left text-left">
-              <h2 class="card-title pb-4">30% off</h2>
-              <p>Discover a world of treats, toys, and essentials handpicked for </p>
-              <button class="btn btn-primary bg-white text-black border-none">Buy Now</button>
-              <figure class="px-10 py-10">
-                  <img
-                    src="/assets/vegetable-offer.png"
-                    alt="Shoes"
-                    class="rounded-xl" />
-              </figure>
-            </div>
+      <!-- Winter  Selection Sale -->
+       <div cless="mb-8 ">
+        <h3 class="text-4xl text-green-700 pb-4 ">Winter Harvest Sale up to <b>50% off</b></h3> <br>
+        <div class="carousel carousel-center rounded-box pb-20">
+          <div class="carousel-item">
+            <img src="./assets/winter-carrot.png" alt="winter carrot" />
           </div>
-          
+          <div class="carousel-item">
+            <img
+              src="./assets/winter-cabbage.png"
+              alt="Winter Cabbage" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/Winter-spinach.png"
+              alt="Winter Winter-spinach" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/winter-broccoli.png"
+              alt="Winter Broccoli" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/winter-tomato.png" alt="Winter Tomato" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/winter-cucumber.png" alt="Winter Cucumber" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+              alt="Pizza" />
+          </div>
+        </div>
+       
+
+       </div>
+
+      <!-- Popular Product Section -->
+      <div class="bg-orange-100 py-20 px-10">
+        <h3 class="text-4xl text-green-700 py-10">Popular Products</h3>
+        <div class="flex flex-col md:flex-row gap-3">
+          <!-- Big Card -->
+        <div class="card popular-card w-96 shadow-xl">
+          <div class="card-body items-left text-left">
+            <h2 class="card-title pb-4">30% off</h2>
+            <p>Discover a world of treats, toys, and essentials handpicked for </p>
+            <button class="btn w-2/4 btn-primary bg-white text-black border-none">Buy Now</button>
+            <figure class="px-10 py-10">
+                <img
+                  src="/assets/vegetable-offer.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+            </figure>
+          </div>
+        </div>
+
+
+       
           <!-- Grid for small cards -->
           
           <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -221,7 +279,7 @@
             <div class="card card-side bg-base-100 shadow-xl">
               <figure>
                 <img
-                  src="/assets/onion.png"
+                  src="/assets/potato.png"
                   alt="Onion" />
               </figure>
               <div class="card-body">
@@ -229,8 +287,23 @@
                   <i class="fa fa-star text-yellow-500" aria-hidden="true"></i>
                   <p>4.5</p>
                 </div>
-                <h2 class="card-title">Onion 1 KG</h2>
-                <p>$1.99</p>
+                <h2 class="card-title">Potato 1 KG</h2>
+                <p>$1.50</p>
+              </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="/assets/tomato.png"
+                  alt="Onion" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-3">
+                  <i class="fa fa-star text-yellow-500" aria-hidden="true"></i>
+                  <p>4.5</p>
+                </div>
+                <h2 class="card-title">Tomato 1 KG</h2>
+                <p>$2.99</p>
               </div>
             </div>
             <div class="card card-side bg-base-100 shadow-xl">
@@ -251,7 +324,7 @@
             <div class="card card-side bg-base-100 shadow-xl">
               <figure>
                 <img
-                  src="/assets/onion.png"
+                  src="/assets/tomato.png"
                   alt="Onion" />
               </figure>
               <div class="card-body">
@@ -259,29 +332,29 @@
                   <i class="fa fa-star text-yellow-500" aria-hidden="true"></i>
                   <p>4.5</p>
                 </div>
-                <h2 class="card-title">Onion 1 KG</h2>
-                <p>$1.99</p>
+                <h2 class="card-title">Tomato 1 KG</h2>
+                <p>$2.99</p>
               </div>
             </div>
             <div class="card card-side bg-base-100 shadow-xl">
               <figure>
                 <img
-                  src="/assets/onion.png"
-                  alt="Onion" />
+                  src="/assets/potato.png"
+                  alt="Potato" />
               </figure>
               <div class="card-body">
                 <div class="flex gap-3">
                   <i class="fa fa-star text-yellow-500" aria-hidden="true"></i>
                   <p>4.5</p>
                 </div>
-                <h2 class="card-title">Onion 1 KG</h2>
-                <p>$1.99</p>
+                <h2 class="card-title">Potato 1 KG</h2>
+                <p>$1.50</p>
               </div>
             </div>
             <div class="card card-side bg-base-100 shadow-xl">
               <figure>
                 <img
-                  src="/assets/onion.png"
+                  src="/assets/tomato.png"
                   alt="Onion" />
               </figure>
               <div class="card-body">
@@ -289,14 +362,14 @@
                   <i class="fa fa-star text-yellow-500" aria-hidden="true"></i>
                   <p>4.5</p>
                 </div>
-                <h2 class="card-title">Onion 1 KG</h2>
-                <p>$1.99</p>
+                <h2 class="card-title">Tomato1 KG</h2>
+                <p>$2.99</p>
               </div>
             </div>
             <div class="card card-side bg-base-100 shadow-xl">
               <figure>
                 <img
-                  src="/assets/onion.png"
+                  src="/assets/potato.png"
                   alt="Onion" />
               </figure>
               <div class="card-body">
@@ -304,23 +377,8 @@
                   <i class="fa fa-star text-yellow-500" aria-hidden="true"></i>
                   <p>4.5</p>
                 </div>
-                <h2 class="card-title">Onion 1 KG</h2>
-                <p>$1.99</p>
-              </div>
-            </div>
-            <div class="card card-side bg-base-100 shadow-xl">
-              <figure>
-                <img
-                  src="/assets/onion.png"
-                  alt="Onion" />
-              </figure>
-              <div class="card-body">
-                <div class="flex gap-3">
-                  <i class="fa fa-star text-yellow-500" aria-hidden="true"></i>
-                  <p>4.5</p>
-                </div>
-                <h2 class="card-title">Onion 1 KG</h2>
-                <p>$1.99</p>
+                <h2 class="card-title">Potato 1 KG</h2>
+                <p>$1.50</p>
               </div>
             </div>
             <div class="card card-side bg-base-100 shadow-xl">
@@ -346,7 +404,7 @@
         
 
         <!-- Arrivals and Offers -->
-        <div class=" w-10/12 py-20 pb-50">
+        <div class="py-20 pb-50 w-full">
           <h3 class="text-4xl text-green-700 py-10">Arrival & Offers</h3>
           <div class="cardcontainer">
             <div class="flex flex-col md:flex-row gap-4 justify-center">
@@ -361,7 +419,7 @@
                   <br>
                   <button class="btn btn-primary bg-green-500">Cook Exotic Dishes</button>
                   <br>
-                  <h2 class="card-title text-white">Up to 20% OFF</h2>
+                  <h2 class="card-title text-white">Up to <b>20% OFF</b> </h2>
                 </div>
                 <figure>
                   <img
@@ -384,7 +442,7 @@
                   <div class="card-actions">
                     <button class="btn btn-primary">World’s No.1 Rice</button>
                   </div>
-                  <h2 class="card-title text-white">UP to 40% OFF</h2>
+                  <h2 class="card-title text-white">UP to <b>40% OFF </b></h2>
                   
                 </div>
                 <figure>
@@ -401,10 +459,10 @@
           
         </div>
         
-       
-        <div class=" relative justify-center pt-40">
+       <!-- News Letter Section -->
+        <div class=" relative justify-center pt-80 md:pt-40">
           
-          <div class=" absolute -bottom-40 right-60 w-8/12 card card-side bg-orange-100 shadow-xl">
+          <div class=" flex flex-col md:flex-row  absolute -bottom-40 right-20 md:right-60 w-8/12 card card-side bg-orange-100 shadow-xl">
             <figure>
               <img
                 src="/assets/vegetable-busket.png"
@@ -412,8 +470,9 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Get Grocery News!</h2>
-              <p>Exclusive training tips, ticks, product deals and more.</p>
-              <div class="card-actions">
+              <p>Exclusive sales, specials, free delivery and more.</p> 
+              <div class=" flex flex-col card-actions">
+                <input class="bg-white border-b-3 border-none w-full md:w-4/6 rounded-sm" placeholder="Enter Email"><br>
                 <button class="btn btn-primary bg-green-700">Subscribe</button>
               </div>
             </div>
@@ -434,7 +493,7 @@
                     <img class="mb-8" src="./assets/logo-footer.png" alt="">
                    </li>
                   <li>
-                      <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
+                      <p class="text-white">Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
                   </li>
                  
               </ul>
